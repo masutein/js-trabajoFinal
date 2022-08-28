@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de mangas</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda Mangas</h1>
+    </header>
+
+    <main class="parent">
+        <div class="div1">
+            <div class="div2">
+                <h2>Mangas Ivrea</h2>
+                <img src="./ivrea.jfif" alt="Mangas de Ivrea">
+                
+            </div>
+            <div class="div3">
+                <h2>Mangas Panini</h2>
+                <img src="./panini.jfif" alt="Mangas de panini">
+                
+            </div>
+            <div class="div4">
+                <h2>Mangas PDF</h2>
+                <img src="./pdf.jfif" alt="Mangas en PDF">
+            </div>
+                <form id="valor">
+                    <select name="select" id="select">
+                        <option value="ivrea">Ivrea</option>
+                        <option value="panini">Panini</option>
+                        <option value="pdf">PDF</option>
+                    </select>
+                    <input type="number" placeholder="cantidad" id="cantidad" required>
+                    <input type="submit" value="Calcular" class="btn">
+                </form>
+            <div class="data">
+                <p>Lista de precios consultados</p>
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>hecho por Jonathan Vallejos</h2>
+    </footer>
+</body>
+<script src="./main.js"></script>
+</html>
