@@ -4,9 +4,7 @@ let valor = document.getElementById("valor")
 
 function calcularPrecio(e) {
     e.preventDefault();
-    const ivrea = 750;
-    const panini = 1100;
-    const pdf = 300;
+    var productos = [ivrea = 750, panini = 1100, pdf = 250];
     let cantidad = document.getElementById("cantidad").value,
         editorial = document.getElementById("select").value;
         total = 0;
@@ -18,14 +16,7 @@ function calcularPrecio(e) {
         total = parseInt(cantidad * pdf)
     }
     console.log(editorial, total)
-    
-    //let total = parseInt(precio) * parseInt(cantidad)
-
     UI(total, editorial)
-}
-
-function reset() {
-    document.getElementById('div').reset()
 }
 
 function UI(total, editorial){
@@ -39,5 +30,5 @@ function UI(total, editorial){
     `
     result.appendChild(dataPrint);
     document.getElementById('valor').reset()
-    //reset()
+    
 }
